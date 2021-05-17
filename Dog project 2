@@ -1,0 +1,39 @@
+package com.dog;
+
+public class Dog {  // Super Class Declared
+  
+  protected String breed;  // variables (values) to create an instance of 'dog' - state structure
+  protected String color;
+  protected String height;
+  protected String weight;
+  
+  
+      public void shake () { //dog behaviors -method
+
+      }
+      public void sit () {
+
+      }
+      public void lay () {
+
+      }
+
+  
+  public static void main(String[] args) {  //added {
+	  
+  
+	   
+	   Dog obj; { // added {
+		   obj = new Dog();  //instance of dog new object
+	   obj.breed = "hound";
+       obj.color = "brown";
+       obj.height = "2 feet";
+       obj.weight = "60 lbs";
+       
+
+                  
+	   System.out.println("This " + (obj.color) + ", " + (obj.breed) +  ", " + (obj.height) +  ", " + (obj.weight) +  " can shake, sit and lay down");
+	 }
+         
+  }
+}
