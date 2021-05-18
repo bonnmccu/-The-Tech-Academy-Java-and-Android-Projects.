@@ -1,0 +1,83 @@
+public class Shape {
+
+public static void main(String args[]) {
+  
+	  String name; //fields
+	  String color;
+	  double area;
+
+		  
+		 name = "undetermined";
+	     color = "blue";
+	     area = 0;
+	  }
+
+	  public void display() {  // methods
+	  
+	  
+	     System.out.println("Name: " + name);
+	     System.out.println("Color: " + color);
+	     System.out.println("Area: " + area);
+	  }		     	  
+		
+			  public class Rectangle extends Shape //subclass 1
+			  {
+			     double length, width;  // fields
+			     public Rectangle()
+			     {
+			        name = "Rectangle";
+			        length = width = 0;
+			     }
+			     public Rectangle(double _length, double _width) 
+			     {
+			        name = "Rectangle";
+			        length = _length; //add here
+			        width = _width; //add here
+			     }
+			   
+			     public void computeArea()
+			     {
+			        area = length * width;
+			     }
+			   
+			  }
+			  public class Square extends Shape //subclass 2
+			  {  
+			     double side; // fields
+			     public Square()
+			     {
+			        name = "Square";
+			        side = 0;
+			     }
+			     public Square(double _side)
+			     {
+			        name = "Square";
+			        side = _side; //add here
+			     }
+			     public void computeArea()
+			     {
+			        area = side * side;
+			     }
+			     
+			  public class Circle extends Shape //sub-class 3
+			  { 
+			     double radius; // field
+			     public Circle()
+			     {
+			        name = "Circle";
+			        radius = 0;
+			     }
+			     public Circle(double _radius)
+			     {
+			        name = "Circle";
+			        radius = _radius; //added here
+			     }
+			
+			     public void computeArea()
+			     {
+			        area = Math.PI * radius * radius; //method
+			     }    	     
+			 }
+	  }
+}
+	
