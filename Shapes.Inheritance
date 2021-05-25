@@ -1,0 +1,63 @@
+public class main {
+	
+	public static class Shape { //super class -the things I want in general
+			
+		String color = "blue";
+		public void getArea() { // methods - things I want expressed in general 
+		}	
+		
+	} //end of superclass
+	
+	public static class Rectangle extends Shape{ //sub class
+		int height; //properties
+		int width;
+		
+		public void getArea(int height, int width) { // method
+			int area = height * width; // h & w vaues assigned below
+			System.out.println("Area of the rectangle is: " + area); 
+			System.out.println("It's color is: " + color); 
+			
+		}
+	}
+			
+	 public static class Triangle extends Shape{ //sub class 2
+			int base; //properties
+	
+			int height;
+
+				
+		public void getArea(int base, int height) { // method
+			int area =  base /2 * height; //values assign below tb & th
+			System.out.println("Area of the triangle is: " + area); 
+			System.out.println("It's color is: " + color); 
+		}
+	 }
+	 
+	 public static class Circle extends Shape{ //sub class 2
+			double radius; //property
+				
+		public void getArea(double radius) { // method
+			double area = Math.PI *radius * radius; ; //values assign below as cr
+			System.out.println("Area of the circle is: " + area); 
+			System.out.println("It's color is: " + color); 
+		}
+	 }
+				     		    			
+	
+public static void main(String[] args) { //code that is executed
+		
+		Rectangle rectangle1 = new Rectangle(); //instantiating object
+		    int h = 4; //parameters passed in
+		    int w = 5;
+		    rectangle1.getArea(h,w);
+		    	
+		Triangle triangle1 = new Triangle(); //instantiating object
+		    int tb = 6; //parameters passed in
+		    int th = 5;
+		    triangle1.getArea(tb,th);
+		    
+		Circle circle1 = new Circle(); //instantiating object
+		    double cr = 4; //parameters passed in - radius
+		    circle1.getArea(cr);	    	
+	  }
+}
