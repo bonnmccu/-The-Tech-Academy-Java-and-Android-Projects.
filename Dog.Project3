@@ -1,0 +1,38 @@
+public class main {
+	
+	public static class Dogs {// Super Class Declared
+
+	  protected String breed;  // variables (values) to create an instance of 'dog' - state structure
+	  protected String color;
+	  protected String height;
+	  protected String weight;
+
+
+	      public void shake() { //dog behaviors -method
+	      }
+	      public void sit() {
+	      }
+	      public void lay() {
+	    
+	      }
+	
+
+				public static class newDog extends Dogs { //subclass
+							 
+				}
+ 
+					 public static void main(String[] args) {
+					
+							  newDog hound  = new newDog();  //instance of new dog object
+							  hound.breed = "hound";
+						    hound.color = "brown";
+						    hound.height = "2 feet";
+						    hound.weight = "60 lbs";
+						      
+						      System.out.println ("This " + (hound.color) + ", " + (hound.breed) +  ", " + (hound.height) +  ", " + (hound.weight) +  " can shake, sit and lay down") ;
+								
+	
+					 }
+		}
+}
+		  
